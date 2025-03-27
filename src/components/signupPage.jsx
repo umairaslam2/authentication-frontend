@@ -25,7 +25,7 @@ export default function SignupPage() {
     setSuccess("");
 
     try {
-      const response = await axios.post("http://localhost:3001/api/auth/signup", formData, {
+      const response = await axios.post("https://authentication-frontend-ltpm.vercel.app/signup", formData, {
         headers: { "Content-Type": "application/json" },
       });
 

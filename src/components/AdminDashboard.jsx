@@ -1,7 +1,9 @@
 import React from "react";
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, PieChart, Pie, Cell } from "recharts";
+import axios from "axios";
 
 const Dashboard = () => {
+  
   const recruitmentData = [
     { name: "IT Enable Services", value: 8, color: "#00BFFF" },
     { name: "Web Development", value: 5, color: "#FFD700" },
@@ -61,6 +63,8 @@ const Dashboard = () => {
 
   const total = data.reduce((sum, item) => sum + item.value, 0);
   const attendancePercentage = Math.round(((data[2].value + data[1].value) / total) * 100);
+
+  
 
 
 
